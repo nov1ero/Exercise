@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1058979516948",
+    "project_id": "loginforactivity",
+    "storage_bucket": "loginforactivity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058979516948:android:b6c5e670df4e426f434d01",
+        "android_client_info": {
+          "package_name": "com.example.exercise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9McQXVIKMrG4k-s2h1MbKNOBfqkMwyj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
