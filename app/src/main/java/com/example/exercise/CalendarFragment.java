@@ -79,7 +79,7 @@ public class CalendarFragment extends Fragment {
 
         CalendarView calendarView = rootView.findViewById(R.id.calendarView);
         textView = rootView.findViewById(R.id.infoCal);
-        textView2 = rootView.findViewById(R.id.infoUser);
+
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
         String currentUserName = user != null ? user.getEmail() : null;
