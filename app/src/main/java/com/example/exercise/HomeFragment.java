@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference("Users");
-
+        DatabaseReference usersRef2 = FirebaseDatabase.getInstance().getReference("Rooms");
         View v =  inflater.inflate(R.layout.fragment_home, container, false);
         tx = v.findViewById(R.id.dashboard);
 
