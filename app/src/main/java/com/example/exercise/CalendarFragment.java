@@ -82,7 +82,7 @@ public class CalendarFragment extends Fragment {
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
-        String currentUserName = user != null ? user.getEmail() : null;
+
         DatabaseReference roomsRef = FirebaseDatabase.getInstance().getReference("Rooms");
         DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("Users");
 
@@ -100,7 +100,7 @@ public class CalendarFragment extends Fragment {
 
 
                         String roomName = roomSnapshot.child("name").getValue(String.class);
-                        if (roomSnapshot.hasChild("booked-by") && currentUserName != null && currentUserName.equals(roomSnapshot.child("booked-by").getValue(String.class))) {
+                        if (roomSnapshot.hasChild("booked-by")){
 
 
                             DataSnapshot timeSnapshot = roomSnapshot.child("time");
