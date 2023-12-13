@@ -111,17 +111,15 @@ public class CalendarFragment extends Fragment {
                             if (year == yearValue && month == monthValue && dayOfMonth == dayValue){
 
 
-                                textView.setText("Booked!");
+                                status = "Booked!";
                                 break;
                             }
-                            else{
-                                textView.setText(status);
-                            }
+
 
                         }
 
                     }
-
+                    textView.setText(status);
 
                 }
 
